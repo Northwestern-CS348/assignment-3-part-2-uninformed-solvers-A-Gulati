@@ -1,9 +1,22 @@
-
 from solver import *
+from collections import deque
 
 class SolverDFS(UninformedSolver):
     def __init__(self, gameMaster, victoryCondition):
         super().__init__(gameMaster, victoryCondition)
+    # self.visited = dict()
+    # self.currentState = GameState(self.gm.getGameState(), 0, None)
+    # self.visited[self.currentState] = True
+    # self.victoryCondition = victoryCondition
+
+    # self.children = []
+    # self.nextChildToVisit = GameState.FIRST_CHILD_INDEX
+    # self.parent = None
+    # self.requiredMovable = movableToReachThisState
+    # self.state = state
+    # self.depth = depth
+    # def dfs_loop(self,movables,to_move):
+
 
     def solveOneStep(self):
         """
@@ -19,12 +32,14 @@ class SolverDFS(UninformedSolver):
             True if the desired solution state is reached, False otherwise
         """
         ### Student code goes here
-        return True
+        pass
 
 
 class SolverBFS(UninformedSolver):
+
     def __init__(self, gameMaster, victoryCondition):
         super().__init__(gameMaster, victoryCondition)
+
 
     def solveOneStep(self):
         """
@@ -40,4 +55,4 @@ class SolverBFS(UninformedSolver):
             True if the desired solution state is reached, False otherwise
         """
         ### Student code goes here
-        return True
+        pass
